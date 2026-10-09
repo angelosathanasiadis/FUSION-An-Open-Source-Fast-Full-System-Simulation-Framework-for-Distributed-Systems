@@ -30,8 +30,6 @@ For more details on the overall architecture, please refer to the main [FUSION F
 5. Press **OK** and wait for the INET compilation to finish.
 6. Repeat the process (Steps 1-5), but this time select `HLANode` and your active simulation/demo project.
 
-## Licensing
-Refer to the `LICENSE` files included. Individual licenses may be present in different source files depending on their origin (e.g., OMNeT++ / INET components).
 
 #### Authors
 - Angelos Athanasiadis (angelathan@ece.auth.gr)
