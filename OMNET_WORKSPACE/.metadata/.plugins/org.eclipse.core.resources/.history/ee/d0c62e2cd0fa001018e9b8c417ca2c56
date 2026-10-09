@@ -1,0 +1,925 @@
+// ----------------------------------------------------------------------------
+// COSSIM - Example of 4 simulated HLANodes using both Ethernet and Wireless networks.
+// Copyright (c) 2018, H2020 COSSIM.
+// Copyright (c) 2018, Telecommunications Systems Institute.
+// 
+// Author: Nikolaos Tampouratzis, ntampouratzis@isc.tuc.gr
+// ----------------------------------------------------------------------------
+
+package test.simulations;
+
+import HLANode.SyncNode;
+import HLANode.Txc0;
+import HLANode.Txc1;
+import HLANode.Txc2;
+import HLANode.Txc3;
+import HLANode.Txc4;
+import HLANode.Txc5;
+import HLANode.Txc6;
+import HLANode.Txc7;
+//////
+import HLANode.Txc8;
+import HLANode.Txc9;
+import HLANode.Txc10;
+import HLANode.Txc11;
+import HLANode.Txc12;
+import HLANode.Txc13;
+import HLANode.Txc14;
+import HLANode.Txc15;
+
+import HLANode.Txc16;
+import HLANode.Txc17;
+import HLANode.Txc18;
+import HLANode.Txc19;
+import HLANode.Txc20;
+import HLANode.Txc21;
+import HLANode.Txc22;
+import HLANode.Txc23;
+//
+import HLANode.Txc24;
+import HLANode.Txc25;
+import HLANode.Txc26;
+import HLANode.Txc27;
+import HLANode.Txc28;
+import HLANode.Txc29;
+import HLANode.Txc30;
+import HLANode.Txc31;
+import HLANode.Txc32;
+
+import HLANode.Txc33;
+import HLANode.Txc34;
+import HLANode.Txc35;
+import HLANode.Txc36;
+import HLANode.Txc37;
+import HLANode.Txc38;
+import HLANode.Txc39;
+import HLANode.Txc40;
+
+import HLANode.Txc41;
+import HLANode.Txc42;
+import HLANode.Txc43;
+import HLANode.Txc44;
+import HLANode.Txc45;
+import HLANode.Txc46;
+import HLANode.Txc47;
+import HLANode.Txc48;
+
+import HLANode.Txc49;
+import HLANode.Txc50;
+import HLANode.Txc51;
+import HLANode.Txc52;
+import HLANode.Txc53;
+import HLANode.Txc54;
+import HLANode.Txc55;
+import HLANode.Txc56;
+
+import HLANode.Txc57;
+import HLANode.Txc58;
+import HLANode.Txc59;
+import HLANode.Txc60;
+import HLANode.Txc61;
+import HLANode.Txc62;
+import HLANode.Txc63;
+import HLANode.Txc64;
+
+import HLANode.Txc65;
+import HLANode.Txc66;
+import HLANode.Txc67;
+import HLANode.Txc68;
+import HLANode.Txc69;
+import HLANode.Txc70;
+import HLANode.Txc71;
+import HLANode.Txc72;
+import HLANode.Txc73;
+import HLANode.Txc74;
+import HLANode.Txc75;
+import HLANode.Txc76;
+import HLANode.Txc77;
+import HLANode.Txc78;
+import HLANode.Txc79;
+import HLANode.Txc80;
+import HLANode.Txc81;
+import HLANode.Txc82;
+import HLANode.Txc83;
+import HLANode.Txc84;
+import HLANode.Txc85;
+import HLANode.Txc86;
+import HLANode.Txc87;
+import HLANode.Txc88;
+import HLANode.Txc89;
+import HLANode.Txc90;
+import HLANode.Txc91;
+import HLANode.Txc92;
+import HLANode.Txc93;
+import HLANode.Txc94;
+import HLANode.Txc95;
+import HLANode.Txc96;
+import HLANode.Txc97;
+import HLANode.Txc98;
+import HLANode.Txc99;
+import HLANode.Txc100;
+import HLANode.Txc101;
+import HLANode.Txc102;
+import HLANode.Txc103;
+import HLANode.Txc104;
+import HLANode.Txc105;
+import HLANode.Txc106;
+import HLANode.Txc107;
+import HLANode.Txc108;
+import HLANode.Txc109;
+import HLANode.Txc110;
+import HLANode.Txc111;
+import HLANode.Txc112;
+import HLANode.Txc113;
+import HLANode.Txc114;
+import HLANode.Txc115;
+import HLANode.Txc116;
+import HLANode.Txc117;
+import HLANode.Txc118;
+import HLANode.Txc119;
+import HLANode.Txc120;
+import HLANode.Txc121;
+import HLANode.Txc122;
+import HLANode.Txc123;
+import HLANode.Txc124;
+import HLANode.Txc125;
+import HLANode.Txc126;
+import HLANode.Txc127;
+import HLANode.Txc128;
+
+import inet.node.ethernet.EtherSwitch;
+import ned.DatarateChannel;
+
+import inet.node.inet.Router;
+import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
+
+import inet.node.aodv.AODVRouter;
+import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
+import inet.node.inet.INetworkNode;
+import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
+import inet.node.ethernet.Eth100M;
+import inet.node.inet.Router;
+import inet.node.inet.StandardHost;
+import inet.node.inet.NodeBase;
+import inet.node.inet.WirelessHost;
+import inet.node.wireless.AccessPoint;
+import inet.physicallayer.ieee80211.packetlevel.Ieee80211ScalarRadioMedium;
+
+
+
+
+
+module CossimWirelessHostTower extends AODVRouter
+{
+    @display("i=device/antennatower");
+    numRadios = default(1);
+}
+
+
+module CossimWirelessHostMobile extends AODVRouter
+{
+    @display("i=device/cellphone");
+    numRadios = default(1);
+}
+
+ 
+network ARPTest
+{
+    types:
+
+
+        channel ethline extends DatarateChannel
+        {
+            delay = 0ms;
+            datarate = 10000Mbps;
+        }
+    submodules:
+
+//        micro_router0: CossimWirelessHostTower {
+//
+//            @display("p=322,137");
+//        }
+//
+//        micro_router1: CossimWirelessHostMobile {
+//            @display("p=432,182");
+//        }
+
+
+//        radioMedium: Ieee80211ScalarRadioMedium {
+//            @display("p=64,350");
+//        }
+
+
+
+
+        switch1: EtherSwitch {
+            @display("p=203,159");
+        }
+
+ 
+        configurator: IPv4NetworkConfigurator {
+            //  assignDisjunctSubnetAddresses = true;
+            config = xmldoc("config1.xml");
+
+            @display("p=65,90");
+        }
+
+
+        node0: Txc0 {
+            parameters:
+                @display("i=device/server_l;p=382,58");
+        }
+        node1: Txc1 {
+            parameters:
+                @display("i=device/pc;p=439,276");
+        }
+        node2: Txc2 {
+            parameters:
+                @display("i=device/pc;p=142,289");
+        }
+        node3: Txc3 {
+            parameters:
+                @display("i=device/pc;p=262,289");
+        }
+        node4: Txc4 {
+            parameters:
+                @display("i=device/pc;p=482,58");
+        }
+        node5: Txc5 {
+            parameters:
+                @display("i=device/pc;p=539,276");
+        }
+        node6: Txc6 {
+            parameters:
+                @display("i=device/pc;p=182,289");
+        }
+        node7: Txc7 {
+            parameters:
+                @display("i=device/pc;p=362,289");
+        }
+//        
+//        
+        node8: Txc8 {
+            parameters:
+                @display("i=device/pc;p=382,158");
+        }
+        node9: Txc9 {
+            parameters:
+                @display("i=device/pc;p=439,376");
+        }
+        node10: Txc10 {
+            parameters:
+                @display("i=device/pc;p=142,389");
+        }
+        node11: Txc11 {
+            parameters:
+                @display("i=device/pc;p=262,389");
+        }
+        node12: Txc12 {
+            parameters:
+                @display("i=device/pc;p=482,158");
+        }
+        node13: Txc13 {
+            parameters:
+                @display("i=device/pc;p=539,376");
+        }
+        node14: Txc14 {
+            parameters:
+                @display("i=device/pc;p=182,389");
+        }
+        node15: Txc15 {
+            parameters:
+                @display("i=device/pc;p=362,389");
+        }
+        
+        
+       node16: Txc16 {
+            parameters:
+                @display("i=device/pc;p=382,158");
+        }
+        node17: Txc17 {
+            parameters:
+                @display("i=device/pc;p=439,376");
+        }
+        node18: Txc18 {
+            parameters:
+                @display("i=device/pc;p=142,389");
+        }
+        node19: Txc19 {
+            parameters:
+                @display("i=device/pc;p=262,389");
+        }
+        node20: Txc20 {
+            parameters:
+                @display("i=device/pc;p=482,258");
+        }
+        node21: Txc21 {
+            parameters:
+                @display("i=device/pc;p=539,376");
+        }
+        node22: Txc22 {
+            parameters:
+                @display("i=device/pc;p=182,389");
+        }
+        node23: Txc23 {
+            parameters:
+                @display("i=device/pc;p=362,389");
+        }
+        
+        
+        node24: Txc24 {
+            parameters:
+                @display("i=device/pc;p=382,258");
+        }
+        node25: Txc25 {
+            parameters:
+                @display("i=device/pc;p=439,476");
+        }
+        node26: Txc26 {
+            parameters:
+                @display("i=device/pc;p=142,489");
+        }
+        node27: Txc27 {
+            parameters:
+                @display("i=device/pc;p=262,489");
+        }
+        node28: Txc28 {
+            parameters:
+                @display("i=device/pc;p=482,258");
+        }
+        node29: Txc29 {
+            parameters:
+                @display("i=device/pc;p=539,476");
+        }
+        node30: Txc30 {
+            parameters:
+                @display("i=device/pc;p=182,489");
+        }
+        node31: Txc31 {
+            parameters:
+                @display("i=device/pc;p=362,489");
+        }
+        node32: Txc32 {
+            parameters:
+                @display("i=device/pc;p=500,489");
+        }		
+
+        node33: Txc33 {
+            parameters:
+                @display("i=device/pc;p=382,589");
+        }
+        node34: Txc34 {
+            parameters:
+                @display("i=device/pc;p=439,589");
+        }
+        node35: Txc35 {
+            parameters:
+                @display("i=device/pc;p=142,589");
+        }
+        node36: Txc36 {
+            parameters:
+                @display("i=device/pc;p=262,589");
+        }
+        node37: Txc37 {
+            parameters:
+                @display("i=device/pc;p=482,589");
+        }
+        node38: Txc38 {
+            parameters:
+                @display("i=device/pc;p=539,589");
+        }
+        node39: Txc39 {
+            parameters:
+                @display("i=device/pc;p=182,589");
+        }
+        node40: Txc40 {
+            parameters:
+                @display("i=device/pc;p=362,589");
+        }
+
+        node41: Txc41 {
+            parameters:
+                @display("i=device/pc;p=382,689");
+        }
+        node42: Txc42 {
+            parameters:
+                @display("i=device/pc;p=439,689");
+        }
+        node43: Txc43 {
+            parameters:
+                @display("i=device/pc;p=142,689");
+        }
+        node44: Txc44 {
+            parameters:
+                @display("i=device/pc;p=262,689");
+        }
+        node45: Txc45 {
+            parameters:
+                @display("i=device/pc;p=482,689");
+        }
+        node46: Txc46 {
+            parameters:
+                @display("i=device/pc;p=539,689");
+        }
+        node47: Txc47 {
+            parameters:
+                @display("i=device/pc;p=182,689");
+        }
+        node48: Txc48 {
+            parameters:
+                @display("i=device/pc;p=362,689");
+        }
+
+        node49: Txc49 {
+            parameters:
+                @display("i=device/pc;p=382,789");
+        }
+        node50: Txc50 {
+            parameters:
+                @display("i=device/pc;p=439,789");
+        }
+        node51: Txc51 {
+            parameters:
+                @display("i=device/pc;p=142,789");
+        }
+        node52: Txc52 {
+            parameters:
+                @display("i=device/pc;p=262,789");
+        }
+        node53: Txc53 {
+            parameters:
+                @display("i=device/pc;p=482,789");
+        }
+        node54: Txc54 {
+            parameters:
+                @display("i=device/pc;p=539,789");
+        }
+        node55: Txc55 {
+            parameters:
+                @display("i=device/pc;p=182,789");
+        }
+        node56: Txc56 {
+            parameters:
+                @display("i=device/pc;p=362,789");
+        }
+
+        node57: Txc57 {
+            parameters:
+                @display("i=device/pc;p=382,889");
+        }
+        node58: Txc58 {
+            parameters:
+                @display("i=device/pc;p=439,889");
+        }
+        node59: Txc59 {
+            parameters:
+                @display("i=device/pc;p=142,889");
+        }
+        node60: Txc60 {
+            parameters:
+                @display("i=device/pc;p=262,889");
+        }
+        node61: Txc61 {
+            parameters:
+                @display("i=device/pc;p=482,889");
+        }
+        node62: Txc62 {
+            parameters:
+                @display("i=device/pc;p=539,889");
+        }
+        node63: Txc63 {
+            parameters:
+                @display("i=device/pc;p=182,889");
+        }
+        node64: Txc64 {
+            parameters:
+                @display("i=device/pc;p=362,889");
+        }
+        node65: Txc65 {
+            parameters:
+                @display("i=device/pc;p=382,989");
+        }
+        node66: Txc66 {
+            parameters:
+                @display("i=device/pc;p=439,989");
+        }
+        node67: Txc67 {
+            parameters:
+                @display("i=device/pc;p=142,989");
+        }
+        node68: Txc68 {
+            parameters:
+                @display("i=device/pc;p=262,989");
+        }
+        node69: Txc69 {
+            parameters:
+                @display("i=device/pc;p=482,989");
+        }
+        node70: Txc70 {
+            parameters:
+                @display("i=device/pc;p=539,989");
+        }
+        node71: Txc71 {
+            parameters:
+                @display("i=device/pc;p=182,989");
+        }
+        node72: Txc72 {
+            parameters:
+                @display("i=device/pc;p=362,989");
+        }
+
+        node73: Txc73 {
+            parameters:
+                @display("i=device/pc;p=382,1089");
+        }
+        node74: Txc74 {
+            parameters:
+                @display("i=device/pc;p=439,1089");
+        }
+        node75: Txc75 {
+            parameters:
+                @display("i=device/pc;p=142,1089");
+        }
+        node76: Txc76 {
+            parameters:
+                @display("i=device/pc;p=262,1089");
+        }
+        node77: Txc77 {
+            parameters:
+                @display("i=device/pc;p=482,1089");
+        }
+        node78: Txc78 {
+            parameters:
+                @display("i=device/pc;p=539,1089");
+        }
+        node79: Txc79 {
+            parameters:
+                @display("i=device/pc;p=182,1089");
+        }
+        node80: Txc80 {
+            parameters:
+                @display("i=device/pc;p=362,1089");
+        }
+
+        node81: Txc81 {
+            parameters:
+                @display("i=device/pc;p=382,1189");
+        }
+        node82: Txc82 {
+            parameters:
+                @display("i=device/pc;p=439,1189");
+        }
+        node83: Txc83 {
+            parameters:
+                @display("i=device/pc;p=142,1189");
+        }
+        node84: Txc84 {
+            parameters:
+                @display("i=device/pc;p=262,1189");
+        }
+        node85: Txc85 {
+            parameters:
+                @display("i=device/pc;p=482,1189");
+        }
+        node86: Txc86 {
+            parameters:
+                @display("i=device/pc;p=539,1189");
+        }
+        node87: Txc87 {
+            parameters:
+                @display("i=device/pc;p=182,1189");
+        }
+        node88: Txc88 {
+            parameters:
+                @display("i=device/pc;p=362,1189");
+        }
+
+        node89: Txc89 {
+            parameters:
+                @display("i=device/pc;p=382,1289");
+        }
+        node90: Txc90 {
+            parameters:
+                @display("i=device/pc;p=439,1289");
+        }
+        node91: Txc91 {
+            parameters:
+                @display("i=device/pc;p=142,1289");
+        }
+        node92: Txc92 {
+            parameters:
+                @display("i=device/pc;p=262,1289");
+        }
+        node93: Txc93 {
+            parameters:
+                @display("i=device/pc;p=482,1289");
+        }
+        node94: Txc94 {
+            parameters:
+                @display("i=device/pc;p=539,1289");
+        }
+        node95: Txc95 {
+            parameters:
+                @display("i=device/pc;p=182,1289");
+        }
+        node96: Txc96 {
+            parameters:
+                @display("i=device/pc;p=362,1289");
+        }
+
+        node97: Txc97 {
+            parameters:
+                @display("i=device/pc;p=382,1389");
+        }
+        node98: Txc98 {
+            parameters:
+                @display("i=device/pc;p=439,1389");
+        }
+        node99: Txc99 {
+            parameters:
+                @display("i=device/pc;p=142,1389");
+        }
+        node100: Txc100 {
+            parameters:
+                @display("i=device/pc;p=262,1389");
+        }
+        node101: Txc101 {
+            parameters:
+                @display("i=device/pc;p=482,1389");
+        }
+        node102: Txc102 {
+            parameters:
+                @display("i=device/pc;p=539,1389");
+        }
+        node103: Txc103 {
+            parameters:
+                @display("i=device/pc;p=182,1389");
+        }
+        node104: Txc104 {
+            parameters:
+                @display("i=device/pc;p=362,1389");
+        }
+
+        node105: Txc105 {
+            parameters:
+                @display("i=device/pc;p=382,1489");
+        }
+        node106: Txc106 {
+            parameters:
+                @display("i=device/pc;p=439,1489");
+        }
+        node107: Txc107 {
+            parameters:
+                @display("i=device/pc;p=142,1489");
+        }
+        node108: Txc108 {
+            parameters:
+                @display("i=device/pc;p=262,1489");
+        }
+        node109: Txc109 {
+            parameters:
+                @display("i=device/pc;p=482,1489");
+        }
+        node110: Txc110 {
+            parameters:
+                @display("i=device/pc;p=539,1489");
+        }
+        node111: Txc111 {
+            parameters:
+                @display("i=device/pc;p=182,1489");
+        }
+        node112: Txc112 {
+            parameters:
+                @display("i=device/pc;p=362,1489");
+        }
+
+        node113: Txc113 {
+            parameters:
+                @display("i=device/pc;p=382,1589");
+        }
+        node114: Txc114 {
+            parameters:
+                @display("i=device/pc;p=439,1589");
+        }
+        node115: Txc115 {
+            parameters:
+                @display("i=device/pc;p=142,1589");
+        }
+        node116: Txc116 {
+            parameters:
+                @display("i=device/pc;p=262,1589");
+        }
+        node117: Txc117 {
+            parameters:
+                @display("i=device/pc;p=482,1589");
+        }
+        node118: Txc118 {
+            parameters:
+                @display("i=device/pc;p=539,1589");
+        }
+        node119: Txc119 {
+            parameters:
+                @display("i=device/pc;p=182,1589");
+        }
+        node120: Txc120 {
+            parameters:
+                @display("i=device/pc;p=362,1589");
+        }
+
+        node121: Txc121 {
+            parameters:
+                @display("i=device/pc;p=382,1689");
+        }
+        node122: Txc122 {
+            parameters:
+                @display("i=device/pc;p=439,1689");
+        }
+        node123: Txc123 {
+            parameters:
+                @display("i=device/pc;p=142,1689");
+        }
+        node124: Txc124 {
+            parameters:
+                @display("i=device/pc;p=262,1689");
+        }
+        node125: Txc125 {
+            parameters:
+                @display("i=device/pc;p=482,1689");
+        }
+        node126: Txc126 {
+            parameters:
+                @display("i=device/pc;p=539,1689");
+        }
+        node127: Txc127 {
+            parameters:
+                @display("i=device/pc;p=182,1689");
+        }
+        node128: Txc128 {
+            parameters:
+                @display("i=device/pc;p=362,1689");
+        }
+
+
+        syncnode: SyncNode {
+            parameters:
+                @display("i=,red");
+        }
+
+    connections:
+        syncnode.out --> {  delay = 0ms; } --> syncnode.in;
+
+        node0.gate <--> ethline<--> switch1.ethg++;
+        node1.gate <--> ethline <--> switch1.ethg++;
+
+//        node0.gate <--> ethline <--> micro_router0.ethg++;
+//        node1.gate <--> ethline <--> micro_router1.ethg++;        
+//        micro_router0.ethg++ <--> ethline <--> switch1.ethg++;
+
+
+        node2.gate <--> ethline<--> switch1.ethg++;
+        node3.gate <--> ethline <--> switch1.ethg++;
+//        
+        node4.gate <--> ethline<--> switch1.ethg++;
+        node5.gate <--> ethline <--> switch1.ethg++;
+        node6.gate <--> ethline<--> switch1.ethg++;
+        node7.gate <--> ethline <--> switch1.ethg++;
+//////
+//////
+        node8.gate <--> ethline<--> switch1.ethg++;
+        node9.gate <--> ethline <--> switch1.ethg++;
+        node10.gate <--> ethline<--> switch1.ethg++;
+        node11.gate <--> ethline <--> switch1.ethg++;
+        node12.gate <--> ethline<--> switch1.ethg++;
+        node13.gate <--> ethline <--> switch1.ethg++;
+        node14.gate <--> ethline<--> switch1.ethg++;
+        node15.gate <--> ethline <--> switch1.ethg++;
+        
+        node16.gate <--> ethline<--> switch1.ethg++;
+        node17.gate <--> ethline <--> switch1.ethg++;
+        node18.gate <--> ethline<--> switch1.ethg++;
+        node19.gate <--> ethline <--> switch1.ethg++;
+        node20.gate <--> ethline<--> switch1.ethg++;
+        node21.gate <--> ethline <--> switch1.ethg++;
+        node22.gate <--> ethline<--> switch1.ethg++;
+        node23.gate <--> ethline <--> switch1.ethg++;
+        
+        node24.gate <--> ethline<--> switch1.ethg++;
+        node25.gate <--> ethline <--> switch1.ethg++;
+        node26.gate <--> ethline<--> switch1.ethg++;
+        node27.gate <--> ethline <--> switch1.ethg++;
+        node28.gate <--> ethline<--> switch1.ethg++;
+        node29.gate <--> ethline <--> switch1.ethg++;
+        node30.gate <--> ethline<--> switch1.ethg++;
+        node31.gate <--> ethline <--> switch1.ethg++;
+		node32.gate <--> ethline <--> switch1.ethg++;
+
+        node33.gate <--> ethline <--> switch1.ethg++;
+        node34.gate <--> ethline <--> switch1.ethg++;
+        node35.gate <--> ethline <--> switch1.ethg++;
+        node36.gate <--> ethline <--> switch1.ethg++;
+        node37.gate <--> ethline <--> switch1.ethg++;
+        node38.gate <--> ethline <--> switch1.ethg++;
+        node39.gate <--> ethline <--> switch1.ethg++;
+        node40.gate <--> ethline <--> switch1.ethg++;
+
+        node41.gate <--> ethline <--> switch1.ethg++;
+        node42.gate <--> ethline <--> switch1.ethg++;
+        node43.gate <--> ethline <--> switch1.ethg++;
+        node44.gate <--> ethline <--> switch1.ethg++;
+        node45.gate <--> ethline <--> switch1.ethg++;
+        node46.gate <--> ethline <--> switch1.ethg++;
+        node47.gate <--> ethline <--> switch1.ethg++;
+        node48.gate <--> ethline <--> switch1.ethg++;
+
+        node49.gate <--> ethline <--> switch1.ethg++;
+        node50.gate <--> ethline <--> switch1.ethg++;
+        node51.gate <--> ethline <--> switch1.ethg++;
+        node52.gate <--> ethline <--> switch1.ethg++;
+        node53.gate <--> ethline <--> switch1.ethg++;
+        node54.gate <--> ethline <--> switch1.ethg++;
+        node55.gate <--> ethline <--> switch1.ethg++;
+        node56.gate <--> ethline <--> switch1.ethg++;
+
+        node57.gate <--> ethline <--> switch1.ethg++;
+        node58.gate <--> ethline <--> switch1.ethg++;
+        node59.gate <--> ethline <--> switch1.ethg++;
+        node60.gate <--> ethline <--> switch1.ethg++;
+        node61.gate <--> ethline <--> switch1.ethg++;
+        node62.gate <--> ethline <--> switch1.ethg++;
+        node63.gate <--> ethline <--> switch1.ethg++;
+        node64.gate <--> ethline <--> switch1.ethg++;
+
+        node65.gate <--> ethline <--> switch1.ethg++;
+        node66.gate <--> ethline <--> switch1.ethg++;
+        node67.gate <--> ethline <--> switch1.ethg++;
+        node68.gate <--> ethline <--> switch1.ethg++;
+        node69.gate <--> ethline <--> switch1.ethg++;
+        node70.gate <--> ethline <--> switch1.ethg++;
+        node71.gate <--> ethline <--> switch1.ethg++;
+        node72.gate <--> ethline <--> switch1.ethg++;
+
+        node73.gate <--> ethline <--> switch1.ethg++;
+        node74.gate <--> ethline <--> switch1.ethg++;
+        node75.gate <--> ethline <--> switch1.ethg++;
+        node76.gate <--> ethline <--> switch1.ethg++;
+        node77.gate <--> ethline <--> switch1.ethg++;
+        node78.gate <--> ethline <--> switch1.ethg++;
+        node79.gate <--> ethline <--> switch1.ethg++;
+        node80.gate <--> ethline <--> switch1.ethg++;
+
+        node81.gate <--> ethline <--> switch1.ethg++;
+        node82.gate <--> ethline <--> switch1.ethg++;
+        node83.gate <--> ethline <--> switch1.ethg++;
+        node84.gate <--> ethline <--> switch1.ethg++;
+        node85.gate <--> ethline <--> switch1.ethg++;
+        node86.gate <--> ethline <--> switch1.ethg++;
+        node87.gate <--> ethline <--> switch1.ethg++;
+        node88.gate <--> ethline <--> switch1.ethg++;
+
+        node89.gate <--> ethline <--> switch1.ethg++;
+        node90.gate <--> ethline <--> switch1.ethg++;
+        node91.gate <--> ethline <--> switch1.ethg++;
+        node92.gate <--> ethline <--> switch1.ethg++;
+        node93.gate <--> ethline <--> switch1.ethg++;
+        node94.gate <--> ethline <--> switch1.ethg++;
+        node95.gate <--> ethline <--> switch1.ethg++;
+        node96.gate <--> ethline <--> switch1.ethg++;
+
+        node97.gate <--> ethline <--> switch1.ethg++;
+        node98.gate <--> ethline <--> switch1.ethg++;
+        node99.gate <--> ethline <--> switch1.ethg++;
+        node100.gate <--> ethline <--> switch1.ethg++;
+        node101.gate <--> ethline <--> switch1.ethg++;
+        node102.gate <--> ethline <--> switch1.ethg++;
+        node103.gate <--> ethline <--> switch1.ethg++;
+        node104.gate <--> ethline <--> switch1.ethg++;
+
+        node105.gate <--> ethline <--> switch1.ethg++;
+        node106.gate <--> ethline <--> switch1.ethg++;
+        node107.gate <--> ethline <--> switch1.ethg++;
+        node108.gate <--> ethline <--> switch1.ethg++;
+        node109.gate <--> ethline <--> switch1.ethg++;
+        node110.gate <--> ethline <--> switch1.ethg++;
+        node111.gate <--> ethline <--> switch1.ethg++;
+        node112.gate <--> ethline <--> switch1.ethg++;
+
+        node113.gate <--> ethline <--> switch1.ethg++;
+        node114.gate <--> ethline <--> switch1.ethg++;
+        node115.gate <--> ethline <--> switch1.ethg++;
+        node116.gate <--> ethline <--> switch1.ethg++;
+        node117.gate <--> ethline <--> switch1.ethg++;
+        node118.gate <--> ethline <--> switch1.ethg++;
+        node119.gate <--> ethline <--> switch1.ethg++;
+        node120.gate <--> ethline <--> switch1.ethg++;
+
+        node121.gate <--> ethline <--> switch1.ethg++;
+        node122.gate <--> ethline <--> switch1.ethg++;
+        node123.gate <--> ethline <--> switch1.ethg++;
+        node124.gate <--> ethline <--> switch1.ethg++;
+        node125.gate <--> ethline <--> switch1.ethg++;
+        node126.gate <--> ethline <--> switch1.ethg++;
+        node127.gate <--> ethline <--> switch1.ethg++;
+        node128.gate <--> ethline <--> switch1.ethg++;
+
+}
+

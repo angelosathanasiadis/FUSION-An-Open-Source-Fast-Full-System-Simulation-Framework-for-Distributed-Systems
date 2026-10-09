@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/HLA.dir/Clock.cc.o"
+  "CMakeFiles/HLA.dir/Clock.cc.o.d"
+  "CMakeFiles/HLA.dir/ClockFactory.cc.o"
+  "CMakeFiles/HLA.dir/ClockFactory.cc.o.d"
+  "CMakeFiles/HLA.dir/GettimeofdayClock.cc.o"
+  "CMakeFiles/HLA.dir/GettimeofdayClock.cc.o.d"
+  "CMakeFiles/HLA.dir/HLAbuffer.cc.o"
+  "CMakeFiles/HLA.dir/HLAbuffer.cc.o.d"
+  "CMakeFiles/HLA.dir/MessageBuffer.cc.o"
+  "CMakeFiles/HLA.dir/MessageBuffer.cc.o.d"
+  "CMakeFiles/HLA.dir/MsgBuffer.c.o"
+  "CMakeFiles/HLA.dir/MsgBuffer.c.o.d"
+  "CMakeFiles/HLA.dir/MurmurHash2.cpp.o"
+  "CMakeFiles/HLA.dir/MurmurHash2.cpp.o.d"
+  "CMakeFiles/HLA.dir/MurmurHash3.cpp.o"
+  "CMakeFiles/HLA.dir/MurmurHash3.cpp.o.d"
+  "CMakeFiles/HLA.dir/PMurHash.c.o"
+  "CMakeFiles/HLA.dir/PMurHash.c.o.d"
+  "CMakeFiles/HLA.dir/PosixClock.cc.o"
+  "CMakeFiles/HLA.dir/PosixClock.cc.o.d"
+  "CMakeFiles/HLA.dir/SHMPosix.cc.o"
+  "CMakeFiles/HLA.dir/SHMPosix.cc.o.d"
+  "CMakeFiles/HLA.dir/SHMSysV.cc.o"
+  "CMakeFiles/HLA.dir/SHMSysV.cc.o.d"
+  "CMakeFiles/HLA.dir/SemaphorePosix.cc.o"
+  "CMakeFiles/HLA.dir/SemaphorePosix.cc.o.d"
+  "CMakeFiles/HLA.dir/SemaphoreSysV.cc.o"
+  "CMakeFiles/HLA.dir/SemaphoreSysV.cc.o.d"
+  "CMakeFiles/HLA.dir/sha1.c.o"
+  "CMakeFiles/HLA.dir/sha1.c.o.d"
+  "CMakeFiles/HLA.dir/tlsf.c.o"
+  "CMakeFiles/HLA.dir/tlsf.c.o.d"
+  "libHLAd.pdb"
+  "libHLAd.so"
+  "libHLAd.so.4"
+  "libHLAd.so.4.0.0"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/HLA.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

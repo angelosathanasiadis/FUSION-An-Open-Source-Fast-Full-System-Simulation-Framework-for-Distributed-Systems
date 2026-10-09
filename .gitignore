@@ -1,0 +1,15 @@
+# QEMU ignores
+qemu/build/
+qemu/qemu-debug.log
+qemu/qemu.log
+
+# cCERTI ignores
+cCERTI/build_certi/
+cCERTI/Testing/
+
+# OMNeT++ ignores
+OMNET_WORKSPACE/inet/out/
+OMNET_WORKSPACE/HLANode/out/
+OMNET_WORKSPACE/test/out/
+
+*.log

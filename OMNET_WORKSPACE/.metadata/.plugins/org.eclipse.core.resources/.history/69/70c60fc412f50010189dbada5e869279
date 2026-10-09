@@ -1,0 +1,1317 @@
+package HLANode;
+
+simple Txc0
+{
+	parameters:
+		double RXPacketTime = default(0.000011);
+		double StartRXPacketTime = default(27);
+		int nodeNo = default(0);
+		bool sendInitialMessage = default(false);
+
+		@display("i=block/routing");
+	gates:
+		inout gate;
+}
+simple Txc1 extends Txc0
+{
+		parameters:    
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(1);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc2 extends Txc0
+{
+		parameters:    
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(2);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc3 extends Txc0
+{
+		parameters:    
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(3);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc4 extends Txc0
+{
+		parameters:    
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(4);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc5 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(5);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc6 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(6);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc7 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(7);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc8 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(8);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc9 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(9);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc10 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(10);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc11 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(11);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc12 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(12);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc13 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(13);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc14 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(14);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc15 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(15);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+
+
+
+
+
+
+simple Txc16 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(16);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc17 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(17);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc18 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(18);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc19 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(19);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc20 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(20);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc21 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(21);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc22 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(22);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc23 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(23);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc24 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(24);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc25 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(25);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc26 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(26);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc27 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(27);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc28 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(28);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc29 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(29);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc30 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(30);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+
+simple Txc31 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(31);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc32 extends Txc0
+{
+		parameters:
+		RXPacketTime = default(0.000011);
+		StartRXPacketTime = default(27);
+		nodeNo = default(32);
+
+		sendInitialMessage = default(false);
+		@display("i=block/routing");
+}
+simple Txc33 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(33);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc34 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(34);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc35 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(35);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc36 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(36);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc37 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(37);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc38 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(38);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc39 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(39);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc40 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(40);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc41 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(41);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc42 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(42);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc43 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(43);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc44 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(44);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc45 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(45);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc46 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(46);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc47 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(47);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc48 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(48);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc49 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(49);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc50 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(50);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc51 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(51);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc52 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(52);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc53 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(53);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc54 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(54);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc55 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(55);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc56 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(56);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc57 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(57);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc58 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(58);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc59 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(59);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc60 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(60);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc61 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(61);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc62 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(62);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc63 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(63);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc64 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(64);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc65 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(65);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc66 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(66);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc67 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(67);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc68 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(68);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc69 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(69);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc70 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(70);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc71 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(71);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc72 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(72);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc73 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(73);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc74 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(74);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc75 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(75);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc76 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(76);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc77 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(77);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc78 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(78);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc79 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(79);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc80 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(80);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc81 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(81);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc82 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(82);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc83 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(83);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc84 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(84);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc85 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(85);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc86 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(86);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc87 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(87);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc88 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(88);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc89 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(89);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc90 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(90);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc91 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(91);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc92 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(92);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc93 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(93);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc94 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(94);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc95 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(95);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc96 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(96);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc97 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(97);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc98 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(98);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc99 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(99);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc100 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(100);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc101 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(101);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc102 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(102);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc103 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(103);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc104 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(104);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc105 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(105);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc106 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(106);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc107 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(107);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc108 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(108);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc109 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(109);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc110 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(110);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc111 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(111);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc112 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(112);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc113 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(113);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc114 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(114);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc115 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(115);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc116 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(116);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc117 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(117);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc118 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(118);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc119 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(119);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc120 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(120);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc121 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(121);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc122 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(122);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc123 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(123);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc124 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(124);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc125 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(125);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc126 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(126);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc127 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(127);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+simple Txc128 extends Txc0
+{
+    parameters:
+        RXPacketTime = default(0.000011);
+        StartRXPacketTime = default(27);
+        nodeNo = default(128);
+
+        sendInitialMessage = default(false);
+        @display("i=block/routing");
+}
+
+
+
+simple SyncNode
+{
+	parameters:
+		int NumberOfHLANodes = default(129);
+		double SynchTime = default(0.000011);
+		double StartSynchTime = default(0);
+
+		bool sendInitialMessage = default(false);
+		@display("i=block/routing");
+	gates:
+		input in;
+		output out;
+}

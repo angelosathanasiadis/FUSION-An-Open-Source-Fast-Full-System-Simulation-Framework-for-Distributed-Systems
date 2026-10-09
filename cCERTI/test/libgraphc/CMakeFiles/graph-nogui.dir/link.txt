@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgraph-noguid.a CMakeFiles/graph-nogui.dir/graph_c.cc.o
+/usr/bin/ranlib libgraph-noguid.a
